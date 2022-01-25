@@ -1,38 +1,3 @@
-/*
-import 'dart:convert';
-
-import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-
-import 'home_scrren.dart';
-
-void main()async{
-  List currencies = await getCurrrences();
-  runApp(MyApp(currencies));}
-
-
-class MyApp extends StatelessWidget {
-  //const MyApp({Key? key, required this.currencies}) : super(key: key);
-
-  MyApp( this.currencies);
-  final List currencies;
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.teal),
-      home: myhomepage(currencies: [],),
-    );
-  }
-}
-
-Future<List> getCurrrences() async{
-
-  String cryptoUrl= "https://api.coinmarketcap.com/v1/ticker/?limit=50";
-  http.Response responce =await http.get(Uri.parse(cryptoUrl));
-  return jsonDecode(responce.body);
-}*/
-
-
 
 import 'package:flutter/material.dart';
 
@@ -64,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildFutureBuilder() {
     return Center(
       child: FutureBuilder<int>(
-        future: _calculateSquare(15),
+        future: _calculateSquare(10),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done)
             return Text("Square = ${snapshot.data}");
@@ -101,6 +66,7 @@ class _HomePageState extends State<HomePage> {
     while (true) {
       await Future.delayed(Duration(seconds: 1));
       yield _count++;
+
     }
   }
 }

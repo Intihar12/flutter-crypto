@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "532731729996",
+    "project_id": "cryptocurrencies-80d18",
+    "storage_bucket": "cryptocurrencies-80d18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532731729996:android:0b1f3125631c1c79827ce9",
+        "android_client_info": {
+          "package_name": "com.example.fluttercrypto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532731729996-bc7v4rnp0u9a388je1ord65t82ccrm7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA759cdv0v6Yxnyds390XGy8XOGfK0XXr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532731729996-bc7v4rnp0u9a388je1ord65t82ccrm7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
